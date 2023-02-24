@@ -9,8 +9,12 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.dark {
   background: #333333;
-  font-family: "Open Sans", sans-serif;
+  color: #bbbbbb;
 }
 
 #box {
@@ -37,19 +41,18 @@ body {
 }
 
 #time {
-  color: #bbbbbb;
   font-size: 10rem;
+  transition: 0.3s ease;
 }
 
 #start,
 #stop,
 #reset {
-  background: none;
   font-size: 2rem;
-  color: #bbbbbb;
   border: 2px solid #bbbbbb;
   padding: 0.5rem 2.5rem;
   border-radius: 3rem;
+  cursor: pointer;
 }
 
 #colorMode {

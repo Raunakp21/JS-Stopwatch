@@ -26,9 +26,9 @@ const secElem = document.querySelector("#sec");
 const mSecElem = document.querySelector("#mSec");
 
 //variables;
-let ms = 00;
-let s = 00;
-let m = 00;
+let ms = 0;
+let s = 0;
+let m = 0;
 let interval;
 
 //Event Listeners
@@ -44,6 +44,9 @@ function startFn(e) {
 
 function resetFn(e) {
   clearInterval(interval);
+  ms = 0;
+  s = 0;
+  m = 0;
   minElem.innerText = "00";
   secElem.innerText = "00";
   mSecElem.innerText = "00";
